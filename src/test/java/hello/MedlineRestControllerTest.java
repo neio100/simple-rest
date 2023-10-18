@@ -32,7 +32,7 @@ import org.springframework.test.web.servlet.MockMvc;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 @AutoConfigureMockMvc
-public class GreetingControllerTest {
+public class MedlineRestControllerTest {
 
 	@Autowired
 	private MockMvc mockMvc;
@@ -41,6 +41,6 @@ public class GreetingControllerTest {
 	public void greetingShouldReturnDefaultMessage() throws Exception {
 
 		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk())
-				.andExpect(content().string(containsString("Hello World")));
+				.andExpect(content().string(containsString("I am making a production change")));
 	}
 }
