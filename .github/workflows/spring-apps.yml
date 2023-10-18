@@ -33,6 +33,7 @@ jobs:
           action: deploy
           service-name: 'enterprise-services'
           app-name: 'simple-ms'
+          name: 'green'
           use-staging-deployment: true
           package: ${{ env.ASC_PACKAGE_PATH }}/**/*.jar
           builder: 'default'
