@@ -15,7 +15,7 @@ public class MedlineRestController {
 	private static final Logger LOGGER = LoggerFactory.getLogger(MedlineRestController.class);
 	@RequestMapping("/")
 	public @ResponseBody String greeting() {
-		return "I am making a production change";
+		return "Hello World change";
 	}
 
 	@PostMapping("/messages/audit")
