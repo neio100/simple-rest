@@ -15,7 +15,7 @@ public class MedlineRestController {
 	@RequestMapping("/")
 	public @ResponseBody String greeting() {
 		return
-				"Hello World change";
+				"Hello World";
 	}
 
 	@PostMapping("/messages/audit")
